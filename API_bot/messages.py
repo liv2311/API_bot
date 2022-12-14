@@ -3,7 +3,7 @@ from api_service import get_weather
 
 
 def weather() -> str:
-    """Returns a message about the temperature and weather description"""
+    """Returns a message about the temperature and weather description99"""
     wthr = get_weather(get_coordinates())
     return f'{wthr.location}, {wthr.description}\n' \
            f'Temperature is {wthr.temperature}°C, feels like {wthr.temperature_feeling}°C'
